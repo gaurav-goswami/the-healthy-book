@@ -1,0 +1,154 @@
+.explore-section{
+    height: 80vh;
+    position: relative;
+    background-color: rgba(138, 248, 157, 0.496);
+}
+
+.explore-circle{
+    width: 50rem;
+    height: 50rem;
+    border-radius: 100%;
+    background-color: #12F897;
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.explore-heading{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.explore-heading p{
+    font-size: 6rem;
+    color: var(--text-secondary-color);
+    font-weight: 600;
+}
+
+
+.explore-imgs{
+    width: max-content;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50% , 5%);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.explore-imgs .ex-img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.ex-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-position: center;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.ex-img img:hover{
+    transform: scale(1.07);
+}
+
+/* media queries */
+
+@media screen and (max-width: 1200px) {
+
+    .explore-section{
+        height: 70vh;
+    }
+
+    .explore-heading{
+        padding-left: 2rem;
+        width: 75%;
+    }
+
+    .explore-heading p{
+        font-size: 4.3rem;
+    }
+
+    .explore-circle{
+        width: 40rem;
+        height: 40rem;
+        right: -22%;
+    }
+}
+
+@media screen and (max-width  : 768px){
+    .explore-section{
+        height: 50vh;
+    }
+
+    .explore-heading p{
+        font-size: 3.2rem;
+    }
+
+    .explore-circle{
+        width: 28rem;
+        height: 28rem;
+    }
+
+    .explore-imgs .ex-img{
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width : 580px) {
+    .explore-section{
+        height: 40vh;
+    }
+
+    .explore-heading{
+        width: 85%;
+    }
+
+    .explore-heading p{
+        font-size: 2.2rem;
+    }
+
+    .explore-circle{
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .explore-imgs .ex-img{
+        width: 8rem;
+        height: 8rem;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .explore-section{
+        height: 40vh;
+    }
+
+    .explore-heading{
+        padding-left: .5rem;
+    }
+
+    .explore-circle{
+        width: 18rem;
+        height: 18rem;
+        right: -29%;
+    }
+    .explore-heading p{
+        font-size: 1.9rem;
+    }
+}

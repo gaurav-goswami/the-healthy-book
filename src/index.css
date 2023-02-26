@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --text-primary-color : rgb(55, 51, 51);
+  --text-secondary-color : rgb(95, 92, 92);
+  --primary-bg : #53FF5A;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration : none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+*::selection{
+  background-color: rgb(58, 211, 58);
+  color: #fff;
+}
+
+body{
+  background-color: #DDEFDE;
+  overflow-x: hidden;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+
+
+
+/* common styles */
+
+.btn-primary{
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+  border: none;
+  background-color: var(--primary-bg);
+  color: var(--text-primary-color);
+  cursor: pointer;
+  border-radius: 3rem;
+  display: inline-block;
+  width: max-content;
+}
+
+.btn-primary:hover{
+  background-color: #20e916d0;
+}
+
+
+.heading-style{
+  color : var(--text-primary-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.para-style{
+  font-size: 2rem;
+  line-height: 2;
+  margin-top: 2rem;
+  color: var(--text-secondary-color);
+  font-weight: 300;
+}
+
+
+@media screen and (max-width : 520px) {
+  .para-style{
+    font-size: 1.6rem;
+  }
+
+  .btn-primary{
+    padding: 0.5rem;
+  }
+
+}
