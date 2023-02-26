@@ -64,7 +64,9 @@ const FullMeal = () => {
                 <div className="meal-section">
 
                     <div className="meal-img">
-                        <img src={mealDetail.strMealThumb} alt="food image" />
+                    {
+                    (mealDetail.strMealThumb === null) ? <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/image-unavailable-2311594-1917454.png?f=avif&w=512" alt="Food Item Image" /> : <img src={mealDetail.strMealThumb} alt="Food Item Image" />
+                    }
                     </div>
 
                     <div className="meal-detail">
@@ -79,8 +81,13 @@ const FullMeal = () => {
                     {
                         ingredients.map((currentIngredient , index) => {
                             return <div className="ingredient" key = {index}>
-                                <img src={`https://www.themealdb.com/images/ingredients/${currentIngredient.ingredientName}.png`} alt="ingredient image" />
-                                <p style = {{textAlign : 'center' , fontSize : '1.5rem' , color : 'grey'}}>{currentIngredient.ingredientName}</p>
+                                {
+                                    (currentIngredient.ingredientName === '') ?  <img src={`https://cdn.iconscout.com/icon/premium/png-512-thumb/image-unavailable-2311594-1917454.png?f=avif&w=512`} alt="ingredient image"/> :
+                                    <>
+                                    <img src={`https://www.themealdb.com/images/ingredients/${currentIngredient.ingredientName}.png`} alt="ingredient image" />
+                                    <p style = {{textAlign : 'center' , fontSize : '1.5rem' , color : 'grey'}}>{currentIngredient.ingredientName}</p>
+                                    </>
+                                }
                             </div>
                         })
                     }

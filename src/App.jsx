@@ -9,6 +9,7 @@ import CategoryPage from './pages/CategoryPage';
 import CountryCategoryPage from './pages/CountryCategoryPage';
 import SearchResult from './pages/SearchResult';
 import FullMeal from './pages/FullMeal';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   
@@ -16,7 +17,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <Navbar/>
         <Routes>
           <Route path = '/'  element = {<Home />} />
           <Route path = '/getstarted' element = {<GetStarted />} /> 
@@ -27,6 +28,7 @@ const App = () => {
           <Route path = '/meal/:name' element = {<FullMeal />} />
           <Route path = '*' element = {<Error />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )

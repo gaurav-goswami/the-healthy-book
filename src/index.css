@@ -24,6 +24,7 @@
 body{
   background-color: #DDEFDE;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 html{

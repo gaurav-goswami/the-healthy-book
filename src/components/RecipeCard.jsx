@@ -18,7 +18,10 @@ const RecipeCard = (props) => {
             </div>
 
             <div className="recipe-img">
-                <img src={props.strMealThumb} alt="Food Item Image" />
+                {
+                    (props.strMealThumb === null) ? <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/image-unavailable-2311594-1917454.png?f=avif&w=512" alt="Food Item Image" /> : <img src={props.strMealThumb} alt="Food Item Image" />
+                }
+                
             </div>
 
             <div className="recipe-name">

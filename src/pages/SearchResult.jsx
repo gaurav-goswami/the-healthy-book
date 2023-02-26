@@ -22,6 +22,7 @@ const SearchResult = () => {
 
   return (
     <>
+      <div style = {{position : 'relative' , minHeight : '80vh'}}>
       {
         (meal.isLoading) ? 
         <div style = {{display : 'flex' , justifyContent : 'center' , alignItems : 'center' , width : '100vw', height : '100vh'}}>
@@ -40,8 +41,8 @@ const SearchResult = () => {
           })}
           
         </div>
-
       }
+      </div>
     </>
   )
 }

@@ -1,0 +1,14 @@
+.footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgba(152, 229, 183, 0.507);
+    position: relative;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    font-size: 1.6rem;
+}
+
+.api-link{
+    color: green;
+}
